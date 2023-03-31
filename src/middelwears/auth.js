@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken')
 const authenticaiton = async function (req, res, next) {
     try {
       // validating token --
-      const token = req.cookies["x-auth-token"];
+      const token = setHeader["x-auth-token"];
       if (!token)
         return res
           .status(401)
